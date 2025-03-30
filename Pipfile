@@ -8,6 +8,8 @@ scikit-learn = "*"
 sentence-transformers = "*"
 numpy = "*"
 openpyxl = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 streamlit = "*"
@@ -15,6 +17,7 @@ python-Levenshtein = "*"
 scipy = "*"
 tabulate = "*"
 pytest = "*"
+httpx = "*"
 
 [requires]
 python_version = "3.13"
