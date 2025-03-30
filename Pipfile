@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-learn = "*"
+sentence-transformers = "*"
+numpy = "*"
+
+[dev-packages]
+streamlit = "*"
+python-Levenshtein = "*"
+scipy = "*"
+tabulate = "*"
+
+[requires]
+python_version = "3.13"
+python_full_version = "3.13.2"
