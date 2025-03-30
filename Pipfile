@@ -7,12 +7,14 @@ name = "pypi"
 scikit-learn = "*"
 sentence-transformers = "*"
 numpy = "*"
+openpyxl = "*"
 
 [dev-packages]
 streamlit = "*"
 python-Levenshtein = "*"
 scipy = "*"
 tabulate = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.13"
