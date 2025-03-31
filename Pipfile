@@ -10,6 +10,7 @@ numpy = "*"
 openpyxl = "*"
 fastapi = "*"
 uvicorn = "*"
+python-multipart = "*"
 
 [dev-packages]
 streamlit = "*"
