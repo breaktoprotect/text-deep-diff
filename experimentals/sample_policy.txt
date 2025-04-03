@@ -1,0 +1,15 @@
+Password policies must enforce a minimum length of 12 characters.
+
+All user accounts must be reviewed quarterly for appropriateness.
+
+Administrative access must require multi-factor authentication (MFA).
+
+Remote desktop access must be disabled unless specifically approved.
+
+Audit logs must be retained for a minimum of 180 days.
+
+Non-interactive service accounts must not be used for interactive login.
+
+Security patches must be applied within 7 days of release.
+
+Antivirus software must be installed and configured to auto-update.
