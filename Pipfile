@@ -5,12 +5,19 @@ name = "pypi"
 
 [packages]
 scikit-learn = "*"
-sentence-transformers = "*"
 numpy = "*"
 openpyxl = "*"
 fastapi = "*"
 uvicorn = "*"
 python-multipart = "*"
+<<<<<<< HEAD
+=======
+torch = "*"
+tqdm = "*"
+instructorembedding = "==1.0.1"
+sentence-transformers = "==2.2.2"
+huggingface_hub = "<0.14"
+>>>>>>> main
 
 [dev-packages]
 streamlit = "*"
@@ -21,5 +28,4 @@ pytest = "*"
 httpx = "*"
 
 [requires]
-python_version = "3.13"
-python_full_version = "3.13.2"
+python_version = "3.11"
