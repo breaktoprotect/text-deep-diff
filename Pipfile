@@ -10,14 +10,11 @@ openpyxl = "*"
 fastapi = "*"
 uvicorn = "*"
 python-multipart = "*"
-<<<<<<< HEAD
-=======
 torch = "*"
 tqdm = "*"
 instructorembedding = "==1.0.1"
 sentence-transformers = "==2.2.2"
 huggingface_hub = "<0.14"
->>>>>>> main
 
 [dev-packages]
 streamlit = "*"
@@ -26,6 +23,7 @@ scipy = "*"
 tabulate = "*"
 pytest = "*"
 httpx = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.11"
