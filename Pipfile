@@ -23,6 +23,7 @@ scipy = "*"
 tabulate = "*"
 pytest = "*"
 httpx = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.11"
