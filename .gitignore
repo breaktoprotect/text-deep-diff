@@ -1,6 +1,7 @@
 # Custom
 cached_data.csv
 uploads
+.nicegui
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
