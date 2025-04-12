@@ -22,18 +22,18 @@ async def upload_file(file: UploadFile = File(...)):
         )
 
     # Generate file hash
-    file_hash = get_file_hash(file)
-    file_path = UPLOAD_DIR / f"{file_hash}.xlsx"
+    file_id = get_file_hash(file)
+    file_path = UPLOAD_DIR / f"{file_id}.xlsx"
 
     # Check if file already exists
     if file_path.exists():
         raise HTTPException(status_code=400, detail="File already uploaded.")
 
     # Save the file and its metadata
-    save_file(file_hash, file)
-    save_metadata(file_hash, file.filename)
+    save_file(file_id, file)
+    save_metadata(file_id, file.filename)
 
-    return {"file_hash": file_hash, "filename": file.filename}
+    return {"file_id": file_id, "filename": file.filename}
 
 
 @router.get("/upload/list", tags=["Upload"])

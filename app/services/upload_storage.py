@@ -18,19 +18,19 @@ def get_file_hash(upload_file: UploadFile) -> str:
     return sha256.hexdigest()
 
 
-def save_file(file_hash: str, upload_file: UploadFile) -> Path:
+def save_file(file_id: str, upload_file: UploadFile) -> Path:
     """Save the file using the file hash as the name."""
-    file_path = UPLOAD_DIR / f"{file_hash}.xlsx"
+    file_path = UPLOAD_DIR / f"{file_id}.xlsx"
     with file_path.open("wb") as buffer:
         shutil.copyfileobj(upload_file.file, buffer)
     return file_path
 
 
-def save_metadata(file_hash: str, filename: str) -> None:
+def save_metadata(file_id: str, filename: str) -> None:
     """Save metadata for the uploaded file."""
     metadata = {
-        "file_hash": file_hash,
+        "file_id": file_id,
         "filename": filename,
     }
-    metadata_path = UPLOAD_DIR / f"{file_hash}.meta.json"
+    metadata_path = UPLOAD_DIR / f"{file_id}.meta.json"
     metadata_path.write_text(json.dumps(metadata))
