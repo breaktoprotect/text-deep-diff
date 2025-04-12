@@ -15,6 +15,7 @@ tqdm = "*"
 instructorembedding = "==1.0.1"
 sentence-transformers = "==2.2.2"
 huggingface_hub = "<0.14"
+flet = "*"
 
 [dev-packages]
 streamlit = "*"
@@ -24,6 +25,7 @@ tabulate = "*"
 pytest = "*"
 httpx = "*"
 pytest-cov = "*"
+icecream = "*"
 
 [requires]
 python_version = "3.11"
