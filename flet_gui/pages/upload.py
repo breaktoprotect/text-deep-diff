@@ -24,8 +24,12 @@ async def view(page: ft.Page):
 
             if res.status_code == 200:
                 output.controls.append(ft.Text(f"✅ Uploaded: {name}"))
+            elif res.status_code == 409:
+                output.controls.append(ft.Text(f"☑️ Upload failed: File already exist!"))
             else:
-                output.controls.append(ft.Text(f"❌ Upload failed: {res.status_code}"))
+                output.controls.append(
+                    ft.Text(f"❌ Upload failed for unknown reason: {res.status_code}")
+                )
         except Exception as e:
             output.controls.append(ft.Text(f"❌ Error: {e}"))
         page.update()

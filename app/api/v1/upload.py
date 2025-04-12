@@ -27,7 +27,7 @@ async def upload_file(file: UploadFile = File(...)):
 
     # Check if file already exists
     if file_path.exists():
-        raise HTTPException(status_code=400, detail="File already uploaded.")
+        raise HTTPException(status_code=409, detail="File already uploaded.")
 
     # Save the file and its metadata
     save_file(file_id, file)
